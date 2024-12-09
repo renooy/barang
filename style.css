@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Latar belakang abu-abu terang */
+    color: #333; /* Teks utama */
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0056b3; /* Biru gelap */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ffffff; /* Warna putih saat hover */
+    color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004099; /* Biru lebih gelap saat hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0056b3;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #d9edf7; /* Biru muda saat hover */
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-add {
+    background-color: #28a745; /* Hijau */
+}
+
+.btn-add:hover {
+    background-color: #218838; /* Hijau lebih gelap saat hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Merah */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Merah lebih gelap saat hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    form div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        width: 100%;
+    }
+}

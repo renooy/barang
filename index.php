@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'  && isset($_POST['tambah'])) {
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
     $BarangManager->tambahBarang($nama, $harga, $stok);
-    header('Location : index.php'); //Redirrect untuk mencegah Resubmission
+    header('Location: index.php'); //Redirrect untuk mencegah Resubmission
 }
 
 //Menangani Penghapusan Barang
